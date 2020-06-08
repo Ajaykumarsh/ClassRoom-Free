@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="/hover.css">
+
+  <title>Dbms</title>
+</head>
+<body>
+  <h1 class="ui header" style="text-align:center" id = "head">
+      <a class="ui circular image" href="http://dsce.edu.in"><img src="https://cdn.glitch.com/f3f0a812-ef86-4316-8cee-84e24f8e112e%2Fdsce.png?v=1566407586257"></a>
+  Dayananda Sagar College of Engineering
+</h1>
+  
+  <div class="ui  light blue inverted secondary huge menu">
+  <a class="header item" href="mainpage.html">
+    Home
+  </a>
+ <a class="item">
+    About Us
+  </a> 
+  </div>
+
+  <div class="container">
+    <form name="myform" action="/room" method="POST" >
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">Day</label>
+        </div>
+        <select   name ='days' id="day">
+            <option value="monday">Monday </option>
+            <option value="tuesday">Tuesday </option>
+            <option value="wednesday">Wednesday </option>
+            <option value="thursday">Thursday </option>
+            <option value="friday">Friday</option>
+            <option value="saturday">Saturday </option>
+          
+        </select>
+       
+      </div>
+      <div class="row">
+        
+          <label for="lname">Timings</label>
+        
+        <select name='timings' class="timings">
+            <option value="9_to_10">9 to 10 </option>
+            <option value="10_to_11">10 to 11 </option>
+            <option value="11:15_to_12:15">11:15 to 12:15 </option>
+            <option value="12:15_to_1:15"> 12:15 to 1:15 </option>
+            <option value="2_to_3">2 to 3 </option>
+            <option value="3_to_4">3 to 4 </option>
+            <option value="4_to_5">4 to 5 </option>
+        </select>
+          <div class="submit">
+            <br><br>
+            <button class="btn" >Submit</button>
+     </div> 
+         
+      </div>
+  
+  </form>
+
+  </div>
+
+</div>
+ <!-- <script>
+// function fun(){
+//    var e= document.getElementById('day');
+//    var strUser = e.options[e.selectedIndex].text;
+//   console.log(strUser);
+// }
+
+
+</script> -->
+</body>
+</html>

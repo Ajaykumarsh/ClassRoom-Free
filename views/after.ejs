@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="hover.css">
+  <title>Results</title>
+</head>
+<body>
+  <h1 class="ui header" style="text-align:center" id = "head">
+      <a class="ui circular image" href="http://dsce.edu.in"><img src="https://cdn.glitch.com/f3f0a812-ef86-4316-8cee-84e24f8e112e%2Fdsce.png?v=1566407586257"></a>
+  Dayananda Sagar College of Engineering
+</h1>
+  
+  <div class="ui  light blue inverted secondary huge menu">
+  <a class="header item" href="/">
+    Home
+  </a>
+ <a class="item">
+    About Us
+  </a> 
+  </div>
+
+  <div class="container">
+    Classrooms available during this period are
+    <br>
+    <br>
+    <br>
+    <%if(myarray.length>0){%>
+        <%myarray.forEach(function(rooms){%>
+            <li>
+            
+              
+                <a href="<%=rooms.room_no%>">   <%=rooms["room_no"]%></a>
+            </li>
+        <%});%> 
+    
+        <%}else{%>
+        <h1>NO classrooms are free!!!</h1>
+        <%}%>
+
+  </div>
+
+  <h1 style="text-align:center">Thank you!!</h1>
+
+  </body>
+  </html>
+
+
